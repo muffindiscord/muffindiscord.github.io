@@ -1,0 +1,297 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #920eb3, #c648ff);
+  color: #000;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+}
+
+header {
+  background: linear-gradient(to right, #613874, #920eb3);
+  color: #fff;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: padding 0.3s ease;
+}
+
+.header-logo {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.header-logo img {
+  height: 40px;
+  width: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+nav ul li a:hover::before {
+  left: 0;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #c648ff;
+}
+
+main {
+  flex: 1; /* Take up remaining space */
+  text-align: center;
+  padding: 120px 20px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+
+
+.changelog-list {
+  display: grid; /* Grid layout for changelog items */
+  gap: 20px; /* Space between items */
+  max-width: 800px; /* Max width for readability */
+  margin: 0 auto; /* Center align grid */
+}
+
+.changelog-item {
+  display: block; /* Block level to occupy full width */
+  background-color: #1e1e1e; /* Dark background for items */
+  color: #e0e0e0; /* Light text color */
+  padding: 20px; /* Padding inside blocks */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.changelog-item:hover {
+  background-color: #333; /* Slightly lighter dark background on hover */
+  color: #fff; /* Text color on hover */
+  transform: scale(1.05); /* Slightly enlarge the block */
+}
+
+.changelog-item h2 {
+  font-size: 1.5rem; /* Font size for changelog titles */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.changelog-item p {
+  font-size: 1rem; /* Font size for descriptions */
+  margin: 0; /* No margin for paragraph */
+}
+
+.changelog-content {
+  max-width: 800px; /* Max width for readability */
+  margin: 0 auto; /* Center align content */
+}
+
+.changelog-content h2 {
+  font-size: 1.8rem; /* Font size for subsections */
+  margin-top: 20px; /* Space above subsections */
+  margin-bottom: 10px; /* Space below subsections */
+  border-bottom: 2px solid #c648ff; /* Underline for headings */
+  padding-bottom: 5px; /* Space below underline */
+}
+
+.changelog-content ul {
+  list-style-type: disc; /* Disc bullets for lists */
+  margin-left: 20px; /* Space from left edge */
+}
+
+.changelog-content li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+
+.features {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.feature {
+  background-color: #ffc3c3;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  margin-top: 0;
+  color: #c648ff;
+}
+
+.feature ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer {
+  background: #1e1e1e;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Developer Page Styles */
+.developers-page {
+  padding: 100px 20px 50px;
+  text-align: center;
+}
+
+.developers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.developer {
+  background-color: #1e1e1e;
+  color: #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.developer:hover {
+  background-color: #333;
+}
+
+.developer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.developer-profile {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.developer-profile img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.developer-profile h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.developer-profile .role {
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #c648ff;
+}
+
+.developer-details p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.socials a {
+  display: inline-block;
+}
+
+.socials img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}

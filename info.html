@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info - Muffin Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="./assets/muffin.png" alt="Muffin Bot Logo">
+        </div>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="index.html" class="page-transition">Welcome</a></li>
+                <li><a href="info.html" class="page-transition">Info</a></li>
+                <li><a href="https://discord.gg/FrBANUfVnx" class="page-transition">Discord Invite</a></li>
+                <li><a href="changelogs.html" class="page-transition">Changelogs</a></li>
+                <li><a href="faq.html" class="page-transition">FAQ</a></li>
+                <li><a href="developers.html" class="page-transition">Developers</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="info-page">
+        <section class="intro">
+            <h1>About Muffin Bot</h1>
+            <p>Muffin Bot is a fun Discord bot designed to enhance your server experience. </p>
+            <p>With a wide range of features from Hive Stats to moderation tools, Muffin Bot aims to make managing and enjoying your Discord server easier and more engaging.</p>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <div class="feature">
+                <h3>Moderation Commands</h3>
+                <p>Keep your server secure with these moderation tools:</p>
+                <ul>
+                    <li><code>!kick [user] [reason]</code> - Kick a user from the server.</li>
+                    <li><code>!ban [user_id] [reason]-Not required</code> - Ban a user from the server.</li>
+                    <li><code>!mute [user] [duration] [reason]</code> - Mute a user for a specified time.</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h3>Custom Per Guild Commands</h3>
+                <p>Customize commands and settings for each server:</p>
+                <p>These commands require Administrator permissions!</p>
+                <ul>
+                    <li><code>!command add [command-name] [command-response]</code> - Adds a custom command with a custom response.</li>
+                    <li><code>!command edit [command-name] [new-command-response]</code> - Edit a commands response.</li>
+                    <li><code>!command remove [command-name]</code> - Removes a custom command you added.</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h3>Hive Minigames</h3>
+                <p>Commands for the Hive Minigames server to check statistics! Commands include:</p>
+                <ul>
+                    <li><code>/hive-lb</code> - To check the Monthly/Alltime leaders of the games.</li>
+                    <li><code>/hive-stats</code> - To check a players game stats from any game.</li>
+                    <li><code>/hive-overall</code> - To check a players overall stats.</li>
+                </ul>
+            </div>
+            <div class="feature">
+                <h3>Extra Commands</h3>
+                <p>Some extra commands that could be useful:</p>
+                <ul>
+                    <li><code>/time [timezone]</code> - Find what time it is for a certain timezone.</li>
+                    <li><code>!steal [emoji]</code> - Steal a emoji from any server.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>2024 Muffin Bot</p>
+    </footer>
+</body>
+</html>
