@@ -14,7 +14,7 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Full viewport height */
+  min-height: 100vh;
 }
 
 header {
@@ -83,7 +83,7 @@ nav ul li a:hover {
 }
 
 main {
-  flex: 1; /* Take up remaining space */
+  flex: 1; 
   text-align: center;
   padding: 120px 20px 50px;
   position: relative;
@@ -125,59 +125,59 @@ footer {
 
 
 .changelog-list {
-  display: grid; /* Grid layout for changelog items */
-  gap: 20px; /* Space between items */
-  max-width: 800px; /* Max width for readability */
-  margin: 0 auto; /* Center align grid */
+  display: grid; 
+  gap: 20px; 
+  max-width: 800px; 
+  margin: 0 auto;
 }
 
 .changelog-item {
-  display: block; /* Block level to occupy full width */
-  background-color: #1e1e1e; /* Dark background for items */
-  color: #e0e0e0; /* Light text color */
-  padding: 20px; /* Padding inside blocks */
-  border-radius: 8px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: block; 
+  background-color: #1e1e1e; 
+  color: #e0e0e0; 
+  padding: 20px; 
+  border-radius: 8px; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .changelog-item:hover {
-  background-color: #333; /* Slightly lighter dark background on hover */
-  color: #fff; /* Text color on hover */
-  transform: scale(1.05); /* Slightly enlarge the block */
+  background-color: #333; 
+  color: #fff;
+  transform: scale(1.05); 
 }
 
 .changelog-item h2 {
-  font-size: 1.5rem; /* Font size for changelog titles */
-  margin-bottom: 10px; /* Space below title */
+  font-size: 1.5rem; 
+  margin-bottom: 10px; 
 }
 
 .changelog-item p {
-  font-size: 1rem; /* Font size for descriptions */
-  margin: 0; /* No margin for paragraph */
+  font-size: 1rem; 
+  margin: 0;
 }
 
 .changelog-content {
-  max-width: 800px; /* Max width for readability */
-  margin: 0 auto; /* Center align content */
+  max-width: 800px;
+  margin: 0 auto; 
 }
 
 .changelog-content h2 {
-  font-size: 1.8rem; /* Font size for subsections */
-  margin-top: 20px; /* Space above subsections */
-  margin-bottom: 10px; /* Space below subsections */
-  border-bottom: 2px solid #c648ff; /* Underline for headings */
-  padding-bottom: 5px; /* Space below underline */
+  font-size: 1.8rem;
+  margin-top: 20px; 
+  margin-bottom: 10px; 
+  border-bottom: 2px solid #c648ff; 
+  padding-bottom: 5px; 
 }
 
 .changelog-content ul {
-  list-style-type: disc; /* Disc bullets for lists */
-  margin-left: 20px; /* Space from left edge */
+  list-style-type: disc;
+  margin-left: 20px; 
 }
 
 .changelog-content li {
-  margin-bottom: 10px; /* Space between list items */
+  margin-bottom: 10px; 
 }
 
 
@@ -217,7 +217,7 @@ footer {
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Developer Page Styles */
+
 .developers-page {
   padding: 100px 20px 50px;
   text-align: center;
